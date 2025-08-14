@@ -68,11 +68,29 @@ export default function Signup() {
 						</label>
 						<label>
 							<span>Semester</span>
-							<input name="semester" value={formData.semester} onChange={handleChange} placeholder="e.g. V" required />
+							<select name="semester" value={formData.semester} onChange={handleChange} required>
+								<option value="" disabled>Select semester</option>
+								<option>I</option>
+								<option>II</option>
+								<option>III</option>
+								<option>IV</option>
+								<option>V</option>
+								<option>VI</option>
+								<option>VII</option>
+								<option>VIII</option>
+							</select>
 						</label>
 						<label>
 							<span>Department</span>
-							<input name="department" value={formData.department} onChange={handleChange} placeholder="e.g. I.T." required />
+							<select name="department" value={formData.department} onChange={handleChange} required>
+								<option value="" disabled>Select department</option>
+								<option>I.T.</option>
+								<option>Computer Science</option>
+								<option>Electronics</option>
+								<option>Mechanical</option>
+								<option>Civil</option>
+								<option>Other</option>
+							</select>
 						</label>
 						<label>
 							<span>Date of Birth</span>
@@ -80,11 +98,31 @@ export default function Signup() {
 						</label>
 						<label>
 							<span>Religion</span>
-							<input name="religion" value={formData.religion} onChange={handleChange} placeholder="e.g. HINDU" />
+							<select name="religion" value={formData.religion} onChange={handleChange}>
+								<option value="">Select religion</option>
+								<option>HINDU</option>
+								<option>MUSLIM</option>
+								<option>CHRISTIAN</option>
+								<option>SIKH</option>
+								<option>BUDDHIST</option>
+								<option>JAIN</option>
+								<option>OTHER</option>
+							</select>
 						</label>
 						<label>
 							<span>Blood Group</span>
-							<input name="bloodGroup" value={formData.bloodGroup} onChange={handleChange} placeholder="e.g. B+" />
+							<select name="bloodGroup" value={formData.bloodGroup} onChange={handleChange}>
+								<option value="">Select blood group</option>
+								<option>A+</option>
+								<option>A-</option>
+								<option>B+</option>
+								<option>B-</option>
+								<option>AB+</option>
+								<option>AB-</option>
+								<option>O+</option>
+								<option>O-</option>
+								<option>OTHER</option>
+							</select>
 						</label>
 						<label>
 							<span>Mother Tongue</span>
@@ -96,7 +134,7 @@ export default function Signup() {
 						</label>
 						<label>
 							<span>Phone No.</span>
-							<input name="phone" value={formData.phone} onChange={handleChange} placeholder="10 digits" />
+							<input type="tel" name="phone" value={formData.phone} onChange={handleChange} placeholder="10 digits" />
 						</label>
 						<label className="full">
 							<span>Address</span>
@@ -104,6 +142,7 @@ export default function Signup() {
 						</label>
 					</div>
 
+					<div className="section-title">Upload 3 face images (for automatic attendance)</div>
 					<div className="image-row">
 						<div className="image-field">
 							<span>Image 1</span>
