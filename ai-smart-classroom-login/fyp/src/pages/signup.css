@@ -1,0 +1,100 @@
+.signup-wrapper {
+	background: #f5f7fb;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 24px;
+}
+
+.signup-card {
+	background: #ffffff;
+	width: 1100px;
+	max-width: 95vw;
+	border-radius: 12px;
+	box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+	padding: 28px 32px;
+}
+
+.signup-card h2 {
+	margin: 0 0 16px 0;
+	font-weight: 700;
+	color: #1a1a1a;
+}
+
+.signup-form .grid.two {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 16px 20px;
+}
+
+.signup-form label {
+	display: flex;
+	flex-direction: column;
+	font-size: 14px;
+	color: #333;
+}
+
+.signup-form label > span {
+	margin-bottom: 6px;
+	font-weight: 600;
+}
+
+.signup-form input,
+.signup-form textarea {
+	border: 1px solid #d1d5db;
+	border-radius: 8px;
+	padding: 10px 12px;
+	font-size: 14px;
+	background: #f9fafb;
+	color: #111827;
+}
+
+.signup-form .full {
+	grid-column: span 2;
+}
+
+.image-row {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 16px;
+	margin-top: 18px;
+}
+
+.image-field {
+	border: 1px dashed #cbd5e1;
+	border-radius: 10px;
+	padding: 12px;
+	background: #fbfdff;
+}
+
+.image-field img {
+	margin-top: 10px;
+	height: 120px;
+	width: 100%;
+	object-fit: cover;
+	border-radius: 8px;
+	border: 1px solid #e5e7eb;
+}
+
+.actions {
+	display: flex;
+	justify-content: flex-end;
+	gap: 12px;
+	margin-top: 22px;
+}
+
+.actions button {
+	background: #4e8af8;
+	color: #fff;
+	border: none;
+	padding: 10px 16px;
+	font-size: 14px;
+	border-radius: 8px;
+	cursor: pointer;
+}
+
+.actions button.secondary {
+	background: #e5e7eb;
+	color: #111827;
+}
