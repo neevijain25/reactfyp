@@ -9,7 +9,7 @@ body,html {
 .container {
   background-color: white;
   display: grid;
-  place-items: center start;
+  place-items: center ;
   width: 100%;
   min-height: 100vh;
   height: 100%;
@@ -40,7 +40,7 @@ body,html {
 /* LOGIN title */
 .login-title {
   position: absolute;
-  top: 370px;
+  top: 390px;
   left: 583px;
   font-family: 'Abyssinica SIL', Helvetica, sans-serif;
   font-weight: normal;
@@ -67,18 +67,18 @@ body,html {
 
 /* Username input */
 .username {
-  top: 451px;
+  top: 461px;
   left: 421px;
   width: 441px;
-  height: 35px;
+  height: 40px;
 }
 
 /* Password input */
 .password {
-  top: 512px;
+  top: 522px;
   left: 421px;
   width: 445px;
-  height: 36px; /* approx h-9 = 36px */
+  height: 40px; /* approx h-9 = 36px */
 }
 
 /* Checkbox */
@@ -86,18 +86,18 @@ body,html {
   position: absolute;
   width: 29px;
   height: 29px;
-  top: 578px;
+  top: 588px;
   left: 400px;
 }
 
 /* Remember Password label */
 .remember-label {
   position: absolute;
-  top: 582px;
-  left: 452px;
+  top: 588px;
+  left: 440px;
   font-family: 'Inter', Helvetica, sans-serif;
-  font-weight: 200;
-  font-size: 30px;
+  font-weight: normal;
+  font-size: 24px;
   color: black;
   white-space: nowrap;
 }
@@ -116,16 +116,16 @@ body,html {
 
 /* LOGIN button */
 .login-btn {
-  top: 624px;
-  left: 534px;
+  top: 634px;
+  left: 394px;
   width: 207px;
   background-color: #4e8af8;
 }
 
 /* SIGN UP button */
 .signup-btn {
-  top: 624px;
-  left: 765px;
+  top: 634px;
+  left: 674px;
   width: 190px;
   background-color: #4e8af8;
 }
@@ -133,8 +133,8 @@ body,html {
 /* Forgot Password link */
 .forgot-password {
   position: absolute;
-  top: 692px;
-  left: 649px;
+  top: 702px;
+  left: 560px;
   font-family: 'Readex Pro', Helvetica, sans-serif;
   font-weight: normal;
   font-size: 24px;
