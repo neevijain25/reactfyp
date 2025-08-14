@@ -1,7 +1,9 @@
 import React from "react";
 import "./login.css";
+import { useNavigate } from "react-router-dom";
 
 const Desktop = () => {
+  const navigate = useNavigate();
   return (
     <div className="container">
       <div className="main-box">
@@ -11,8 +13,7 @@ const Desktop = () => {
           <form
             onSubmit={(e) => {
               e.preventDefault();
-              // Add login logic here
-              alert("Login button clicked");
+              navigate("/dashboard");
             }}
           >
             <input
@@ -39,8 +40,7 @@ const Desktop = () => {
               type="button"
               className="btn signup-btn"
               onClick={() => {
-                // Add signup logic here
-                alert("Signup button clicked");
+                navigate("/signup");
               }}
             >
               SIGN UP
