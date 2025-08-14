@@ -6,31 +6,19 @@ body { display: block; overflow: auto; }
 	--ink: #111827;
 }
 
-.dash-page {
-	min-height: 100vh;
-	background: #0c0c0c url('../assets/chalkboard-texture.jpg') repeat;
-	color: var(--ink);
-}
+.dash-page { background-size: cover; background-position: center; }
 
-.topbar {
-	background: var(--primary);
-	color: #fff;
-	display: grid;
-	grid-template-columns: 1fr auto;
-	align-items: center;
-	gap: 16px;
-	padding: 14px 22px;
-}
+.topbar { position: relative; }
+.topbar .logo { height: 58px; width: 58px; object-fit: contain; background: #fff; border-radius: 50%; padding: 4px; box-shadow: 0 2px 8px rgba(0,0,0,0.15); }
+.topbar .logo.left { position: absolute; left: 16px; top: 10px; }
+.topbar .logo.right { position: absolute; right: 16px; top: 10px; }
 
-.topbar .brand {
-	font-weight: 800;
-	text-transform: uppercase;
-	letter-spacing: 0.4px;
-	line-height: 1.2;
-}
+.topbar .brand { text-align: center; margin: 0 90px; }
 
 .topbar .nav { display: flex; gap: 18px; }
 .topbar .nav a { color: #fff; font-weight: 700; cursor: pointer; }
+
+.nav a.active { text-decoration: underline; text-underline-offset: 6px; }
 
 .dash-body {
 	max-width: 1240px;

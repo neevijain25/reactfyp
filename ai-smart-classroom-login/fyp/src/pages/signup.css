@@ -149,6 +149,12 @@
 	color: var(--ink);
 }
 
+.error-text { color: #dc2626; font-size: 12px; margin-top: 6px; }
+
+[aria-invalid="true"] { border-color: #dc2626 !important; box-shadow: 0 0 0 4px rgba(220,38,38,0.12) !important; }
+
+.actions button:disabled { opacity: 0.6; cursor: not-allowed; }
+
 @media (max-width: 900px) {
 	.signup-form .grid.two { grid-template-columns: 1fr; }
 	.signup-form .full { grid-column: auto; }

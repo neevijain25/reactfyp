@@ -1,6 +1,9 @@
 import React, { useMemo } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "./dashboard.css";
+import bg from "../assets/studentbg.jpg";
+import logoLeft from "../assets/Screenshot 2025-08-15 005737.png";
+import logoRight from "../assets/Screenshot 2025-08-15 005749.png";
 
 function useProfile() {
 	return useMemo(() => {
@@ -18,14 +21,16 @@ export default function Dashboard() {
 	const name = profile?.fullName || "Student Name";
 
 	return (
-		<div className="dash-page">
+		<div className="dash-page" style={{ backgroundImage: `url(${bg})` }}>
 			<header className="topbar">
+				<img src={logoLeft} className="logo left" alt="college-left" />
 				<div className="brand">SHRI VILE PARLE KELAVANI MANDAL’S SHRI BHAGUBHAI MAFATLAL POLYTECHNIC & COLLEGE OF ENGINEERING</div>
+				<img src={logoRight} className="logo right" alt="college-right" />
 				<nav className="nav">
-					<Link to="/dashboard">HOME</Link>
-					<a>ACCOUNT</a>
-					<a>ACADEMIC</a>
-					<a>NOTIFICATIONS</a>
+					<NavLink to="/home">HOME</NavLink>
+					<NavLink to="/account">ACCOUNT</NavLink>
+					<NavLink to="/academic">ACADEMIC</NavLink>
+					<NavLink to="/notifications">NOTIFICATIONS</NavLink>
 					<Link to="/login">LOGOUT</Link>
 				</nav>
 			</header>
